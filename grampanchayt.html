@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ग्रामपंचायतीबद्दल | ग्रामपंचायत शिरोली पुलाची</title>
+    <meta name="description" content="ग्रामपंचायत शिरोली पुलाचीबद्दल माहिती - इतिहास, रचना, उद्दिष्टे आणि कार्यपद्धती.">
+    <meta name="keywords" content="ग्रामपंचायत, शिरोली पुलाची, Shiroli Pulachi, About Gram Panchayat">
+    <meta name="author" content="Revolution IT Solutions, Kolhapur">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="assets/images/logo.png" rel="icon" type="image/png">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Yatra One", system-ui;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* Page Hero Banner */
+        .gp-about-hero {
+            background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 50%, #52b788 100%);
+            padding: 60px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gp-about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .gp-about-hero h1 {
+            color: #fff;
+            font-size: 2.6rem;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        }
+
+        .gp-about-hero p {
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 1.05rem;
+        }
+
+        .breadcrumb-hero a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+        }
+
+        .breadcrumb-hero a:hover {
+            color: #fff;
+        }
+
+        .breadcrumb-hero .sep {
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0 8px;
+        }
+
+        .breadcrumb-hero .current {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Info Cards */
+        .gp-stat-card {
+            background: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .gp-stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.13);
+        }
+
+        .gp-stat-card .stat-icon {
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .gp-stat-card .stat-num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a472a;
+            font-family: "Poppins", sans-serif;
+            line-height: 1;
+        }
+
+        .gp-stat-card .stat-label {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 6px;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .about-content-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+            height: 100%;
+        }
+
+        .about-content-card h3 {
+            color: #1a472a;
+            border-left: 4px solid #52b788;
+            padding-left: 14px;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .about-content-card p {
+            color: #444;
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        /* Structure / Roles Table */
+        .structure-section {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        .structure-section h2 {
+            color: #a94832;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .gp-table th {
+            background: #1a472a;
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            padding: 14px 18px;
+        }
+
+        .gp-table td {
+            padding: 13px 18px;
+            vertical-align: middle;
+            color: #333;
+        }
+
+        .gp-table tbody tr:nth-child(even) {
+            background: #f0faf4;
+        }
+
+        .gp-table tbody tr:hover {
+            background: #d8f3dc;
+        }
+
+        /* Objectives */
+        .objectives-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .objective-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 28px 22px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+            height: 100%;
+            border-top: 4px solid #1a472a;
+            transition: transform 0.2s;
+        }
+
+        .objective-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .objective-card .obj-icon {
+            width: 52px;
+            height: 52px;
+            background: #e8f5e9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .objective-card h5 {
+            color: #1a472a;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .objective-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        /* Contact Box */
+        .gp-contact-box {
+            background: linear-gradient(135deg, #1a472a, #2d6a4f);
+            border-radius: 14px;
+            padding: 45px 35px;
+            color: #fff;
+        }
+
+        .gp-contact-box h3 {
+            font-size: 1.7rem;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-item .ci-icon {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-info-item .ci-text strong {
+            display: block;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.65);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info-item .ci-text span {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .contact-info-item .ci-text a {
+            color: #a8e6c1;
+            text-decoration: none;
+        }
+
+        .contact-info-item .ci-text a:hover {
+            text-decoration: underline;
+        }
+
+        .section-divider {
+            width: 60px;
+            height: 4px;
+            background: #52b788;
+            border-radius: 2px;
+            margin: 10px 0 28px;
+        }
+    </style>
+</head>
+
+<body class="scrolled">
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div style="margin-left: 25px" class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/images/logo.png" id="imgHeaderLogo" alt="ग्रामपंचायत लोगो">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">मुखपृष्ठ</a></li>
+
+                    <li class="dropdown"><a href="grampanchayt.html" class="active"><span>ग्रामपंचायतीबद्दल</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="grampanchayt.html#about">📖 परिचय</a></li>
+                            <li><a href="grampanchayt.html#structure">🏛️ प्रशासकीय रचना</a></li>
+                            <li><a href="grampanchayt.html#objectives">🎯 उद्दिष्टे</a></li>
+                            <li><a href="grampanchayt.html#members">👥 सदस्य</a></li>
+                            <li><a href="grampanchayt.html#contact">📞 संपर्क</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="seva.html"><span>सेवा</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="seva.html#birth">👶 जन्म नोंदणी</a></li>
+                            <li><a href="seva.html#death">📋 मृत्यू नोंदणी</a></li>
+                            <li><a href="seva.html#marriage">💍 विवाह नोंदणी</a></li>
+                            <li><a href="seva.html#downloads">📄 अर्ज डाउनलोड</a></li>
+                            <li><a href="seva.html#tax">💰 कर भरणा</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="development.html">विकासकामे</a></li>
+
+                    <li class="dropdown"><a href="yojana.html"><span>योजना</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="yojana.html#individual">🏠 वैयक्तिक योजना</a></li>
+                            <li><a href="yojana.html#community">🌳 सामुदायिक योजना</a></li>
+                            <li><a href="yojana.html#mgnrega">⛏️ मनरेगा</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="notice.html">नोटीस बोर्ड</a></li>
+
+                    <li class="dropdown"><a href="village.html"><span>माझे गाव</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="village.html#temples">🛕 मंदिरे</a></li>
+                            <li><a href="village.html#historical">🏛️ ऐतिहासिक ठिकाणे</a></li>
+                            <li><a href="village.html#nature">🌿 निसर्ग</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact1.html">संपर्क</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- ===== HERO BANNER ===== -->
+        <section class="gp-about-hero">
+            <div class="container text-center position-relative">
+                <h1>ग्रामपंचायतीबद्दल</h1>
+                <p>ग्रामपंचायत शिरोली पुलाची — ता. हातकणंगले, जि. कोल्हापूर</p>
+                <nav class="breadcrumb-hero mt-2">
+                    <a href="index.html">मुखपृष्ठ</a>
+                    <span class="sep">›</span>
+                    <span class="current">ग्रामपंचायतीबद्दल</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ===== STATS STRIP ===== -->
+        <section style="padding: 50px 0; background: #fff;">
+            <div class="container">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="gp-stat-card">
+                            <span class="stat-icon">📐</span>
+                            <div class="stat-num">883</div>
+                            <div class="stat-label">एकूण क्षेत्रफळ (चौ. कि.मी.)</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="gp-stat-card">
+                            <span class="stat-icon">👥</span>
+                            <div class="stat-num">6197</div>
+                            <div class="stat-label">एकूण लोकसंख्या</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="gp-stat-card">
+                            <span class="stat-icon">🏡</span>
+                            <div class="stat-num">1420+</div>
+                            <div class="stat-label">एकूण घरे</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="gp-stat-card">
+                            <span class="stat-icon">🗳️</span>
+                            <div class="stat-num">11</div>
+                            <div class="stat-label">ग्रामपंचायत सदस्य</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="gp-stat-card">
+                            <span class="stat-icon">🏷️</span>
+                            <div class="stat-num">179044</div>
+                            <div class="stat-label">LGD कोड</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT CONTENT ===== -->
+        <section class="about-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="gp-section-title">आमच्याबद्दल</h2>
+                    <div class="section-divider mx-auto"></div>
+                    <p class="gp-section-subtitle">ग्रामपंचायत शिरोली पुलाची — एक समृद्ध, पारदर्शक व विकासाभिमुख प्रशासन
+                    </p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="about-content-card">
+                            <h3>🏛️ परिचय</h3>
+                            <p>
+                                ग्रामपंचायत शिरोली पुलाची, ता. हातकणंगले, जि. कोल्हापूर हे महाराष्ट्र राज्यातील एक
+                                प्रगतशील ग्रामपंचायत आहे.
+                                भारतीय संविधानाच्या ७३व्या घटना दुरुस्तीनुसार स्थापित झालेल्या या ग्रामपंचायतीने
+                                आपल्या नागरिकांना पारदर्शक, जबाबदार व लोकाभिमुख प्रशासन देण्याचे ध्येय ठेवले आहे.
+                            </p>
+                            <p>
+                                या ग्रामपंचायतीच्या अखत्यारीत जन्म नोंदणी, मृत्यू नोंदणी, विवाह नोंदणी, करआकारणी,
+                                पाणीपुरवठा, स्वच्छता, रस्ते, दिवाबत्ती यांसारख्या अनेक नागरी सेवा पुरविल्या जातात.
+                                नागरिकांच्या सहभागातून गावाचा सर्वांगीण विकास साधणे हे आमचे प्रमुख उद्दिष्ट आहे.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content-card">
+                            <h3>📜 इतिहास</h3>
+                            <p>
+                                शिरोली पुलाची हे कोल्हापूर जिल्ह्यातील हातकणंगले तालुक्यात वसलेले एक ऐतिहासिक गाव आहे.
+                                या गावाची स्वतःची सांस्कृतिक परंपरा, शेतीचा समृद्ध वारसा आणि नैसर्गिक सौंदर्य
+                                इथल्या जनजीवनाचा अविभाज्य भाग आहे.
+                            </p>
+                            <p>
+                                ग्रामपंचायतीची स्थापना महाराष्ट्र ग्रामपंचायत अधिनियम, १९५८ अंतर्गत झाली असून
+                                तेव्हापासून
+                                हे प्रशासन गावाच्या विकासाची धुरा सांभाळत आहे. दर पाच वर्षांनी होणाऱ्या निवडणुकांद्वारे
+                                नागरिक आपले प्रतिनिधी निवडतात आणि लोकशाही मूल्यांची जपणूक करतात.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="about-content-card">
+                            <h3>⚖️ कायदेशीर आधार</h3>
+                            <p>
+                                ग्रामपंचायत ही भारतीय संविधानाच्या अनुच्छेद ४० नुसार स्थानिक स्वराज्य संस्था म्हणून
+                                कार्य करते.
+                                महाराष्ट्र ग्रामपंचायत अधिनियम, १९५८ आणि त्यात केलेल्या वेळोवेळच्या सुधारणांनुसार
+                                ग्रामपंचायतीचे अधिकार, कार्ये व जबाबदाऱ्या निश्चित केलेल्या आहेत.
+                                ७३व्या घटनादुरुस्तीनुसार महिला आरक्षण, अनुसूचित जाती/जमाती आरक्षण आणि ग्रामसभेच्या
+                                तरतुदी लागू केल्या आहेत.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STRUCTURE ===== -->
+        <section class="structure-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="gp-section-title">प्रशासकीय रचना</h2>
+                    <div class="section-divider mx-auto"></div>
+                    <p class="gp-section-subtitle">ग्रामपंचायतीचे पदाधिकारी व त्यांची जबाबदारी</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table gp-table table-bordered rounded overflow-hidden">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>पद</th>
+                                <th>जबाबदारी</th>
+                                <th>निवड पद्धत</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>सरपंच</strong></td>
+                                <td>ग्रामपंचायतीचे प्रमुख — बैठका बोलावणे, निर्णय घेणे, प्रशासनावर देखरेख</td>
+                                <td>थेट निवडणूक</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>उपसरपंच</strong></td>
+                                <td>सरपंचाच्या अनुपस्थितीत कार्यभार, प्रशासकीय सहाय्य</td>
+                                <td>सदस्यांकडून निवड</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>ग्रामपंचायत सदस्य</strong></td>
+                                <td>विविध वार्डांतील नागरिकांचे प्रतिनिधित्व, योजना राबविणे</td>
+                                <td>थेट निवडणूक</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>ग्रामसेवक</strong></td>
+                                <td>शासकीय योजनांची अंमलबजावणी, अभिलेख व्यवस्थापन</td>
+                                <td>शासन नियुक्ती</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><strong>ग्रामसभा</strong></td>
+                                <td>गावातील मतदार — वार्षिक बैठकांमध्ये योजना मंजूर करतात</td>
+                                <td>सर्व नोंदणीकृत मतदार</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OBJECTIVES ===== -->
+        <section class="objectives-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="gp-section-title">आमची उद्दिष्टे</h2>
+                    <div class="section-divider mx-auto"></div>
+                    <p class="gp-section-subtitle">ग्रामपंचायत शिरोली पुलाची ज्या ध्येयासाठी कार्यरत आहे</p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="objective-card">
+                            <div class="obj-icon">🚰</div>
+                            <h5>स्वच्छ पाणीपुरवठा</h5>
+                            <p>प्रत्येक घरापर्यंत शुद्ध पाणी पोहोचविणे व जलस्रोतांचे संरक्षण करणे.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="objective-card">
+                            <div class="obj-icon">🛣️</div>
+                            <h5>पायाभूत सुविधा</h5>
+                            <p>रस्ते, नाले, पूल यांचे बांधकाम व देखभाल करून संपर्कव्यवस्था सुधारणे.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="objective-card">
+                            <div class="obj-icon">🏫</div>
+                            <h5>शिक्षण व आरोग्य</h5>
+                            <p>शाळा, अंगणवाडी व आरोग्य केंद्रांना सहाय्य करून नागरिकांचे जीवनमान उंचावणे.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="objective-card">
+                            <div class="obj-icon">🌿</div>
+                            <h5>पर्यावरण संरक्षण</h5>
+                            <p>वृक्षलागवड, कचरा व्यवस्थापन व स्वच्छ भारत अभियानाची प्रभावी अंमलबजावणी.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="objective-card">
+                            <div class="obj-icon">💡</div>
+                            <h5>डिजिटल सेवा</h5>
+                            <p>नागरिकांना ऑनलाईन सेवा उपलब्ध करून देणे व डिजिटल साक्षरता वाढविणे.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="objective-card">
+                            <div class="obj-icon">🤝</div>
+                            <h5>सामाजिक न्याय</h5>
+                            <p>महिला, अनुसूचित जाती/जमाती व वंचित घटकांच्या सक्षमीकरणासाठी प्राधान्य देणे.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT & MAP ===== -->
+        <section style="padding: 60px 0; background: #fff;">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="gp-section-title">संपर्क करा</h2>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+                <div class="row gy-4 align-items-stretch">
+                    <div class="col-lg-5">
+                        <div class="gp-contact-box h-100">
+                            <h3>📞 कार्यालय संपर्क</h3>
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                                <div class="ci-text">
+                                    <strong>पत्ता</strong>
+                                    <span>ग्रामपंचायत कार्यालय, शिरोली पुलाची,<br>ता. हातकणंगले, जि. कोल्हापूर –
+                                        416122</span>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+                                <div class="ci-text">
+                                    <strong>दूरध्वनी</strong>
+                                    <span><a href="tel:8605906007">8605906007</a></span>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+                                <div class="ci-text">
+                                    <strong>ई-मेल</strong>
+                                    <span><a href="mailto:shirolipulachi@gmail.com">shirolipulachi@gmail.com</a></span>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="bi bi-clock-fill"></i></div>
+                                <div class="ci-text">
+                                    <strong>कार्यालयीन वेळ</strong>
+                                    <span>सोम. – शनि. सकाळी १०:०० – सायं. ५:३०</span>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="contact1.html" class="btn btn-light btn-sm px-4">
+                                    <i class="bi bi-send me-2"></i>संपर्क करा
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="rounded overflow-hidden shadow-sm h-100" style="min-height: 350px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.7!2d74.5!3d16.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zShirol+Pulachi%2C+Kolhapur!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0; min-height: 350px;" allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/images/logo.png" id="imgFooterLogo"
+                            style="max-height: 60px; background: white; border-radius: 10px;">
+                    </a>
+                    <div class="social-links d-flex mt-4"></div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>महत्वाची संकेतस्थळे</h4>
+                    <ul class="gp-links">
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://maharashtra.gov.in/">महाराष्ट्र शासन</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://majhigrampanchayat.com/">माझी ग्रामपंचायत</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://rdd.maharashtra.gov.in/">ग्रामविकास विभाग</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://egramswaraj.gov.in/">ई-ग्रामस्वराज</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://gr.maharashtra.gov.in/">शासन निर्णय</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://nrega.dord.gov.in/">MGNREGA</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>लिंक्स</h4>
+                    <ul>
+                        <li><i class="bi bi-link-45deg"></i><a href="index.html">मुखपृष्ठ</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="grampanchayt.html">ग्रामपंचायतीबद्दल</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="development.html">विकासकामे</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="seva.html">सेवा</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="notice.html">नोटीस बोर्ड</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="village.html">माझे गाव</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="contact1.html">संपर्क</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>संपर्क</h4>
+                    <div class="footer-contact">
+                        <p>ग्रामपंचायत कार्यालय,</p>
+                        <p>शिरोली पुलाची, ता. हातकणंगले, जि. कोल्हापूर 416122</p>
+                        <p class="mt-3">
+                            <strong>संपर्क क्र.:</strong>
+                            <span><a href="tel:8605906007">8605906007</a></span>
+                        </p>
+                        <p>
+                            <strong>ई-मेल:</strong>
+                            <span><a href="mailto:shirolipulachi@gmail.com">shirolipulachi@gmail.com</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">ग्रामपंचायत शिरोली पुलाची |</strong> <span>All
+                    Rights Reserved</span></p>
+            <div class="credits">Designed by <a style="text-decoration: underline"
+                    href="https://www.revolutionit.in">Revolution IT Solutions</a></div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

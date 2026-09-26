@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title -->
+    <title>योजना | ग्रामपंचायत शिरोली पुलाची</title>
+    <meta name="description" content="ग्रामपंचायत शिरोली पुलाची मार्फत राबविण्यात येणाऱ्या विविध योजना.">
+    <meta name="keywords" content="ग्रामपंचायत, शिरोली पुलाची, योजना, घरकुल योजना, मनरेगा">
+    <meta name="author" content="Revolution IT Solutions, Kolhapur">
+
+    <!-- Fonts (clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+
+    <link href="assets/images/logo.png" rel="icon" type="image/png">
+    <link href="assets/images/logo.png" rel="apple-touch-icon">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h1,
+        h2,
+        h4,
+        h5 {
+            font-family: "Yatra One", system-ui;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        .gp-schemes-page {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        .gp-scheme-row {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+            border-left: 5px solid #a94832;
+            transition: all 0.3s ease;
+        }
+
+        .gp-scheme-row:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .scheme-title {
+            color: #a94832;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .page-title {
+            padding: 30px 0;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .gp-schemes-hero {
+            background: linear-gradient(135deg, #fff8f3 0%, #ffffff 100%);
+            border: 1px solid #ecd6cb;
+            border-radius: 22px;
+            padding: 28px;
+            box-shadow: 0 10px 25px rgba(169, 72, 50, 0.08);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #a94832;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .hero-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            border: 1px solid #f0e1d8;
+            border-radius: 14px;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+        }
+
+        .hero-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #a94832, #d77d58);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-size: 18px;
+        }
+
+        .hero-card strong {
+            display: block;
+            font-size: 20px;
+            color: #a94832;
+        }
+
+        .hero-card span {
+            font-size: 13px;
+            color: #6c757d;
+        }
+
+        .gp-section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .section-chip {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #e9f2ff;
+            color: #0d6efd;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .section-chip-success {
+            background: #e8f7ee;
+            color: #198754;
+        }
+
+        .gp-scheme-row {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gp-scheme-row::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 4px;
+            background: linear-gradient(180deg, #a94832, #d77d58);
+        }
+
+        .scheme-title {
+            color: #a94832;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .gp-scheme-row ul {
+            padding-left: 18px;
+            margin-top: 8px;
+        }
+
+        .gp-scheme-row li {
+            margin-bottom: 6px;
+            color: #4b5563;
+        }
+    </style>
+
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0" class="scrolled">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div style="margin-left: 25px" class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/images/logo.png" id="imgHeaderLogo" alt="ग्रामपंचायत लोगो">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">मुखपृष्ठ</a></li>
+
+                    <li class="dropdown"><a href="grampanchayt.html"><span>ग्रामपंचायतीबद्दल</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="grampanchayt.html#about">📖 परिचय</a></li>
+                            <li><a href="grampanchayt.html#structure">🏛️ प्रशासकीय रचना</a></li>
+                            <li><a href="grampanchayt.html#objectives">🎯 उद्दिष्टे</a></li>
+                            <li><a href="grampanchayt.html#members">👥 सदस्य</a></li>
+                            <li><a href="grampanchayt.html#contact">📞 संपर्क</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="seva.html"><span>सेवा</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="seva.html#birth">👶 जन्म नोंदणी</a></li>
+                            <li><a href="seva.html#death">📋 मृत्यू नोंदणी</a></li>
+                            <li><a href="seva.html#marriage">💍 विवाह नोंदणी</a></li>
+                            <li><a href="seva.html#downloads">📄 अर्ज डाउनलोड</a></li>
+                            <li><a href="seva.html#tax">💰 कर भरणा</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="development.html">विकासकामे</a></li>
+
+                    <li class="dropdown"><a href="yojana.html" class="active"><span>योजना</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="yojana.html#individual">🏠 वैयक्तिक योजना</a></li>
+                            <li><a href="yojana.html#community">🌳 सामुदायिक योजना</a></li>
+                            <li><a href="yojana.html#mgnrega">⛏️ मनरेगा</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="notice.html">नोटीस बोर्ड</a></li>
+
+                    <li class="dropdown"><a href="village.html"><span>माझे गाव</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="village.html#temples">🛕 मंदिरे</a></li>
+                            <li><a href="village.html#historical">🏛️ ऐतिहासिक ठिकाणे</a></li>
+                            <li><a href="village.html#nature">🌿 निसर्ग</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact1.html">संपर्क</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="page-title light-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">योजना</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">मुखपृष्ठ</a></li>
+                        <li class="current">योजना</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <section id="schemes-page" class="gp-schemes-page section">
+
+            <div class="container text-center mb-5">
+                <h2 class="gp-section-title">योजना</h2>
+                <p class="gp-section-subtitle">ग्रामपंचायत मार्फत राबविण्यात येणाऱ्या योजना</p>
+            </div>
+
+            <div class="container mb-5">
+                <div class="gp-schemes-hero">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-lg-8">
+                            <span class="hero-badge"><i class="bi bi-stars"></i> ग्रामपंचायतची प्रमुख योजना</span>
+                            <h3 class="mt-3 mb-3">घरकुल, पाणी, रोजगार आणि सार्वजनिक विकासासाठी उपलब्ध सुविधा</h3>
+                            <p class="mb-0 text-muted">या पानावर ग्रामपंचायत शिरोली पुलाची मार्फत राबविण्यात येणाऱ्या
+                                वैयक्तिक व सामुदायिक योजनांचा सविस्तर तपशील देण्यात आला आहे.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="hero-card">
+                                <div class="hero-icon"><i class="bi bi-house-heart"></i></div>
+                                <div>
+                                    <strong>3+</strong>
+                                    <span>महत्वाच्या योजनांच्या विभाग</span>
+                                </div>
+                            </div>
+                            <div class="hero-card">
+                                <div class="hero-icon"><i class="bi bi-people"></i></div>
+                                <div>
+                                    <strong>100%</strong>
+                                    <span>ग्रामीण लाभार्थी केंद्रित सेवा</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= वैयक्तिक लाभाच्या योजना ================= -->
+            <section id="individual" class="container mb-5">
+                <div class="gp-section-heading">
+                    <div>
+                        <span class="section-chip">वैयक्तिक लाभ</span>
+                        <h4 class="fw-bold mb-0">वैयक्तिक लाभाच्या योजना</h4>
+                    </div>
+                    <p class="mb-0 text-muted">घरकुल, रहिवास आणि कुटुंबीय लाभ देणाऱ्या योजना</p>
+                </div>
+
+                <!-- प्रधानमंत्री आवास योजना -->
+                <div class="gp-scheme-row">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h5 class="scheme-title">प्रधानमंत्री आवास योजना (ग्रामीण)</h5>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                ही घरकुलाची केंद्र पुरस्कृत योजना असून इंदिरा आवास योजनेचे
+                                रूपांतर प्रधानमंत्री आवास योजना ग्रामीण मध्ये करण्यात आले आहे.
+                                सन 2016-17 पासून योजनेची अंमलबजावणी सुरू आहे.
+                                केंद्र व राज्य हिस्सा 60:40 आहे.
+                            </p>
+
+                            <strong>कागदपत्रे:</strong>
+                            <ul>
+                                <li>आधार कार्ड</li>
+                                <li>बँक पासबुक झेरॉक्स</li>
+                                <li>जागेची कागदपत्रे</li>
+                                <li>जॉबकार्ड</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <p><strong>लाभाचे स्वरूप:</strong><br>2 लक्ष रुपये पर्यंत</p>
+                            <p><strong>निवड प्रक्रिया:</strong><br>
+                                SECC-2011 माहितीच्या आधारे
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- रमाई आवास योजना -->
+                <div class="gp-scheme-row">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h5 class="scheme-title">रमाई आवास योजना</h5>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                महाराष्ट्र शासनाची योजना असून अनुसूचित जाती (SC) व
+                                नवबौद्ध घटकांतील कुटुंबांना पक्के घर उपलब्ध करून देणे हा उद्देश आहे.
+                            </p>
+
+                            <strong>पात्रता:</strong>
+                            <ul>
+                                <li>अनुसूचित जाती / नवबौद्ध प्रवर्ग</li>
+                                <li>वार्षिक उत्पन्न ₹1,20,000 पर्यंत</li>
+                                <li>पक्के घर नसावे</li>
+                                <li>पूर्वी घरकुल लाभ घेतलेला नसावा</li>
+                            </ul>
+
+                            <strong>कागदपत्रे:</strong>
+                            <ul>
+                                <li>रहिवासी प्रमाणपत्र</li>
+                                <li>जातीचा दाखला</li>
+                                <li>उत्पन्नाचा दाखला</li>
+                                <li>बँक पासबुक, जॉबकार्ड, जागेची कागदपत्रे</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <p><strong>लाभ:</strong><br>
+                                ₹1,20,000 + मनरेगा मजुरी + शौचालय अनुदान
+                            </p>
+                            <p><strong>निवड:</strong><br>
+                                ग्रामसभा → जिल्हा समिती
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- पं. दीनदयाल घरकुल जागा -->
+                <div class="gp-scheme-row">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h5 class="scheme-title">पं. दीनदयाल उपाध्याय घरकुल जागा खरेदी योजना</h5>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                घरकुलासाठी पात्र परंतु जागा नसलेल्या कुटुंबांसाठी
+                                जागा खरेदीसाठी अर्थसहाय्य देण्याची योजना.
+                            </p>
+
+                            <strong>कागदपत्रे:</strong>
+                            <ul>
+                                <li>आधार कार्ड</li>
+                                <li>बँक पासबुक</li>
+                                <li>जागा खरेदी कागदपत्रे</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <p><strong>लाभ:</strong><br>
+                                ₹1,00,000 पर्यंत
+                            </p>
+                            <p><strong>निवड:</strong><br>
+                                गट विकास अधिकारी समिती
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= सार्वजनिक विकासाच्या योजना ================= -->
+            <section id="community" class="container mb-5">
+                <div class="gp-section-heading">
+                    <div>
+                        <span class="section-chip section-chip-success">सामुदायिक विकास</span>
+                        <h4 class="fw-bold mb-0 text-success">सार्वजनिक विकासाच्या योजना</h4>
+                    </div>
+                    <p class="mb-0 text-muted">गावातील आधारभूत सुविधा, पाणीपुरवठा आणि पर्यटन विकासासाठीची योजना</p>
+                </div>
+
+                <!-- यात्रास्थळ विकास -->
+                <div class="gp-scheme-row" style="border-left-color: #198754;">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h5 class="scheme-title" style="color: #198754;">यात्रास्थळ विकास कार्यक्रम</h5>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                क वर्ग दर्जा असलेल्या तीर्थक्षेत्रांमध्ये भाविकांसाठी
+                                सुविधा निर्माण करणे हा या योजनेचा उद्देश आहे.
+                            </p>
+
+                            <ul>
+                                <li>भक्त निवास</li>
+                                <li>वाहनतळ</li>
+                                <li>स्त्री / पुरुष शौचालय</li>
+                                <li>पाणीपुरवठा व दिवाबत्ती</li>
+                                <li>संरक्षक भिंत</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <p><strong>अटी:</strong><br>
+                                प्रशासकीय व तांत्रिक मान्यता आवश्यक
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- जल जीवन मिशन -->
+                <div class="gp-scheme-row" style="border-left-color: #198754;">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h5 class="scheme-title" style="color: #198754;">जल जीवन मिशन</h5>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                हर घर नल से जल संकल्पनेनुसार प्रत्येक घरात
+                                दरडोई किमान 55 लिटर प्रती दिन पाणीपुरवठा.
+                            </p>
+
+                            <ul>
+                                <li>राष्ट्रीय जल जीवन मिशन</li>
+                                <li>राज्य पाणी व स्वच्छता मिशन</li>
+                                <li>जिल्हा व ग्रामस्तरीय समित्या</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <p><strong>कालावधी:</strong><br>
+                                2024 पर्यंत
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- मनरेगा -->
+                <div id="mgnrega" class="gp-scheme-row" style="border-left-color: #198754;">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h5 class="scheme-title" style="color: #198754;">महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी
+                                योजना</h5>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                ग्रामीण कुटुंबांना अकुशल रोजगाराची हमी देणारी केंद्र पुरस्कृत योजना.
+                            </p>
+
+                            <ul>
+                                <li>100 दिवस रोजगाराची हमी</li>
+                                <li>15 दिवसात मजुरी वाटप</li>
+                                <li>बँक / पोस्ट खात्यात मजुरी</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <p><strong>अंमलबजावणी:</strong><br>
+                                ग्रामसभा मार्फत
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/images/logo.png" id="imgFooterLogo"
+                            style="max-height: 60px; background: white; border-radius: 10px;">
+                    </a>
+                    <div class="social-links d-flex mt-4"></div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>महत्वाची संकेतस्थळे</h4>
+                    <ul class="gp-links">
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://maharashtra.gov.in/">महाराष्ट्र शासन</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://majhigrampanchayat.com/">माझी ग्रामपंचायत</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://rdd.maharashtra.gov.in/">ग्रामविकास विभाग</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://egramswaraj.gov.in/">ई-ग्रामस्वराज</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://gr.maharashtra.gov.in/">शासन निर्णय</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://nrega.dord.gov.in/">MGNREGA</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>लिंक्स</h4>
+                    <ul>
+                        <li><i class="bi bi-link-45deg"></i><a href="index.html">मुखपृष्ठ</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="grampanchayt.html">ग्रामपंचायतीबद्दल</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="development.html">विकासकामे</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="yojana.html">योजना</a></li>
+                        <li><a href="notice.html">नोटीस बोर्ड</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="village.html">माझे गाव</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="contact1.html">संपर्क</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>संपर्क</h4>
+                    <div class="footer-contact">
+                        <p>ग्रामपंचायत कार्यालय,</p>
+                        <p>शिरोली पुलाची, ता. हातकणंगले, जि. कोल्हापूर 416122</p>
+                        <p class="mt-3">
+                            <strong>संपर्क क्र.:</strong>
+                            <span><a href="tel:8605906007">8605906007</a></span>
+                        </p>
+                        <p>
+                            <strong>ई-मेल:</strong>
+                            <span><a href="mailto:shirolipulachi00@gmail.com">shirolipulachi00@gmail.com</a></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">ग्रामपंचायत शिरोली पुलाची |</strong> <span>All
+                    Rights Reserved</span></p>
+            <div class="credits">
+                Designed by <a style="text-decoration: underline" href="https://www.revolutionit.in">Revolution IT
+                    Solutions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/noframework.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

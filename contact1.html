@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>संपर्क | ग्रामपंचायत शिरोली पुलाची</title>
+    <meta name="description" content="ग्रामपंचायत शिरोली पुलाची यांचे संपर्क माहिती, पत्ता, फोन नंबर आणि ई-मेल.">
+    <meta name="author" content="Revolution IT Solutions, Kolhapur">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/images/logo.png" rel="icon" type="image/png">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+
+        h1,
+        h2,
+        h4 {
+            font-family: "Yatra One", system-ui;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="scrolled">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div style="margin-left: 25px" class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/images/logo.png" alt="ग्रामपंचायत लोगो" style="max-height: 60px;">
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">मुखपृष्ठ</a></li>
+                    <li class="dropdown"><a href="grampanchayt.html"><span>ग्रामपंचायतीबद्दल</span> <i
+                                class="bi bi-chevron-down"></i></a></li>
+                    <li class="dropdown"><a href="seva.html"><span>सेवा</span> <i class="bi bi-chevron-down"></i></a>
+                    </li>
+                    <li><a href="development.html">विकासकामे</a></li>
+                    <li class="dropdown"><a href="yojana.html"><span>योजना</span> <i class="bi bi-chevron-down"></i></a>
+                    </li>
+                    <li><a href="notice.html">नोटीस बोर्ड</a></li>
+                    <li class="dropdown"><a href="village.html"><span>माझे गाव</span> <i
+                                class="bi bi-chevron-down"></i></a></li>
+                    <li><a href="contact1.html" class="active">संपर्क</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <style>
+            .contact-page-shell {
+                padding: 30px 0 40px;
+                background: linear-gradient(135deg, #f7f3ef 0%, #fefefe 100%);
+            }
+
+            .contact-hero {
+                background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+                border-radius: 24px;
+                padding: 30px;
+                box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+                margin-bottom: 24px;
+                color: #fff;
+            }
+
+            .contact-pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(255, 255, 255, 0.16);
+                color: #fff;
+                padding: 8px 12px;
+                border-radius: 999px;
+                font-size: 13px;
+                font-weight: 600;
+                margin-bottom: 12px;
+                backdrop-filter: blur(8px);
+            }
+
+            .contact-hero h2 {
+                color: #fff;
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            .contact-hero p {
+                color: #e2e8f0;
+                margin-bottom: 0;
+            }
+
+            .contact-highlight {
+                background: rgba(255, 255, 255, 0.12);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 16px;
+                padding: 16px;
+                backdrop-filter: blur(6px);
+            }
+
+            .contact-highlight strong {
+                display: block;
+                color: #f8fafc;
+                font-size: 18px;
+                margin-bottom: 4px;
+            }
+
+            .contact-card {
+                background: #fff;
+                border-radius: 20px;
+                padding: 24px;
+                box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+                height: 100%;
+                border: 1px solid #e5e7eb;
+            }
+
+            .contact-card h4 {
+                color: #2a0f14;
+                margin-bottom: 18px;
+                font-size: 22px;
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 14px;
+                color: #475569;
+            }
+
+            .contact-item i {
+                color: #2563eb;
+                margin-top: 3px;
+                font-size: 16px;
+            }
+
+            .contact-card .form-control {
+                border-radius: 12px;
+                border: 1px solid #cbd5e1;
+                padding: 10px 12px;
+                background: #f8fafc;
+            }
+
+            .contact-card .form-control:focus {
+                border-color: #2563eb;
+                box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+            }
+
+            .contact-card .btn-success {
+                background: linear-gradient(135deg, #2563eb, #1d4ed8);
+                border: none;
+                border-radius: 12px;
+                padding: 10px 18px;
+            }
+
+            .contact-card .btn-success:hover {
+                background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            }
+
+            .map-card {
+                margin-top: 24px;
+                overflow: hidden;
+                border-radius: 20px;
+                border: 1px solid #e5e7eb;
+                box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+            }
+
+            .map-card iframe {
+                display: block;
+                width: 100%;
+                height: 300px;
+                border: 0;
+            }
+        </style>
+
+        <div class="page-title light-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">संपर्क</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">मुखपृष्ठ</a></li>
+                        <li class="current">संपर्क</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <section id="contact" class="contact-page-shell section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-hero">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-lg-8">
+                            <span class="contact-pill"><i class="bi bi-telephone"></i> ग्रामपंचायत संपर्क</span>
+                            <h2>आपल्या सूचना, तक्रारी व सल्ल्यासाठी येथे संपर्क करा</h2>
+                            <p>आपल्या माहीतीसाठी, तक्रार नोंदवण्यासाठी किंवा कार्यालय भेटीसाठी खालील माहिती वापरा.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="contact-highlight">
+                                <strong>कार्यालय वेळ</strong>
+                                <span>सोमवार ते शनीवार, सकाळी 10:00 ते 6:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="contact-card">
+                            <h4>संपर्क माहिती</h4>
+
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div>
+                                    <strong>पत्ता</strong><br>
+                                    ग्रामपंचायत कार्यालय, शिरोली पुलाची, ता. हातकणंगले, जि. कोल्हापूर 416122
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div>
+                                    <strong>संपर्क क्र.</strong><br>
+                                    <a id="ContentPlaceHolder1_lnkContact" href="tel:०२३०- २४६२९७३">+०२३०- २४६२९७३</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div>
+                                    <strong>ई-मेल</strong><br>
+                                    <a id="ContentPlaceHolder1_lnkEmail"
+                                        href="mailto:shirolipulachi@gmail.com">shirolipulachi@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="contact-card">
+                            <h4>सूचना / तक्रार फॉर्म</h4>
+
+                            <div class="mb-3">
+                                <label class="form-label">नाव</label>
+                                <input name="ctl00$ContentPlaceHolder1$txtName" type="text"
+                                    id="ContentPlaceHolder1_txtName" class="form-control">
+                            </div>
+
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">मोबाईल नंबर</label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtMobile" type="text"
+                                            id="ContentPlaceHolder1_txtMobile" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">ई-मेल</label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text"
+                                            id="ContentPlaceHolder1_txtEmail" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">सूचना / तक्रार तपशील</label>
+                                <textarea name="ctl00$ContentPlaceHolder1$txtMessage" rows="5" cols="20"
+                                    id="ContentPlaceHolder1_txtMessage" class="form-control"></textarea>
+                            </div>
+
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="सबमिट करा"
+                                onclick="return validateComplaintForm();" id="ContentPlaceHolder1_btnSubmit"
+                                class="btn btn-success">
+                            <span id="ContentPlaceHolder1_lblMsg" class="text-success mt-3 d-block"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-card mt-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.579469502447!2d74.26993477508053!3d16.73582498401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1001e3b5e406f%3A0x6b7713d2f93ec730!2sGrampanchayat%20Office%20Shiroli%20Pulachi!5e0!3m2!1sen!2sin!4v1720165500000!5m2!1sen!2sin"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function validateComplaintForm() {
+                var name = $('#ContentPlaceHolder1_txtName').val().trim();
+                var mobile = $('#ContentPlaceHolder1_txtMobile').val().trim();
+                var email = $('#ContentPlaceHolder1_txtEmail').val().trim();
+                var message = $('#ContentPlaceHolder1_txtMessage').val().trim();
+
+                if (name === "") {
+                    toastr.error("कृपया आपले नाव भरा");
+                    return false;
+                }
+
+                if (mobile === "") {
+                    toastr.error("कृपया मोबाईल नंबर भरा");
+                    return false;
+                }
+
+                if (!/^[6-9]\d{9}$/.test(mobile)) {
+                    toastr.error("कृपया वैध मोबाईल नंबर भरा");
+                    return false;
+                }
+
+                if (email === "") {
+                    toastr.error("कृपया ई-मेल पत्ता भरा");
+                    return false;
+                }
+
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    toastr.error("कृपया वैध ई-मेल पत्ता भरा");
+                    return false;
+                }
+
+                if (message === "") {
+                    toastr.error("कृपया सूचना / तक्रार तपशील भरा");
+                    return false;
+                }
+
+                toastr.success("माहिती तपासली गेली आहे, कृपया थांबा...");
+                return true;
+            }
+        </script>
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-content">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/images/logo.png" id="imgFooterLogo"
+                            style="max-height: 60px; background: white; border-radius: 10px;">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-12 footer-contact">
+                    <h4>आमच्याशी संपर्क साधा</h4>
+                    <p><strong>पत्ता:</strong> ग्रामपंचायत कार्यालय, शिरोली पुलाची, ता. हातकणंगले, जि. कोल्हापूर 416122
+                    </p>
+                    <p><strong>फोन:</strong> +91 8605906007</p>
+                    <p><strong>ई-मेल:</strong> <a href="mailto:shirolipulachi@gmail.com">shirolipulachi@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright text-center">
+            <p>&copy; 2026 <strong>ग्रामपंचायत शिरोली पुलाची</strong>. सर्व अधिकार सुरक्षित.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title -->
+    <title>सेवा | ग्रामपंचायत शिरोली पुलाची</title>
+    <meta name="description" content="ग्रामपंचायत शिरोली पुलाची मार्फत पुरविण्यात येणाऱ्या सेवा.">
+    <meta name="keywords" content="ग्रामपंचायत, सेवा, जन्म नोंदणी, मृत्यू नोंदणी, शिरोली पुलाची">
+    <meta name="author" content="Revolution IT Solutions, Kolhapur">
+
+    <!-- Fonts (clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+
+    <link href="assets/images/logo.png" rel="icon" type="image/png">
+    <link href="assets/images/logo.png" rel="apple-touch-icon">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h1,
+        h2,
+        h4 {
+            font-family: "Yatra One", system-ui;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        .gp-services-page {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        .gp-service-row {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+            border-left: 5px solid #1a472a;
+            transition: all 0.3s ease;
+        }
+
+        .gp-service-row:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-title {
+            color: #1a472a;
+            font-weight: 600;
+        }
+
+        .gp-form-downloads {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .gp-info-box {
+            background: #e9f5e9;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .gp-download-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gp-download-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: #fff;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .gp-download-list li i {
+            font-size: 24px;
+            color: #d9534f;
+            margin-right: 15px;
+        }
+
+        .gp-download-list li span {
+            flex-grow: 1;
+            font-weight: 500;
+        }
+
+        .download-btn {
+            background: #1a472a;
+            color: #fff !important;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: #2d6a4f;
+        }
+
+        .gp-tax-payment {
+            padding: 60px 0;
+            background-color: #f4f6f5;
+        }
+
+        .gp-qr-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .qr-title {
+            color: #a94832;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .qr-img {
+            max-width: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+
+        .gp-tax-note {
+            background: #fff3cd;
+            border-left: 5px solid #ffecb5;
+            padding: 20px;
+            border-radius: 8px;
+            color: #856404;
+        }
+
+        .gp-tax-note h4 {
+            margin: 0;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0" class="scrolled">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div style="margin-left: 25px" class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/images/logo.png" id="imgHeaderLogo" alt="ग्रामपंचायत लोगो">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">मुखपृष्ठ</a></li>
+
+                    <li class="dropdown"><a href="grampanchayt.html"><span>ग्रामपंचायतीबद्दल</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="grampanchayt.html#about">📖 परिचय</a></li>
+                            <li><a href="grampanchayt.html#structure">🏛️ प्रशासकीय रचना</a></li>
+                            <li><a href="grampanchayt.html#objectives">🎯 उद्दिष्टे</a></li>
+                            <li><a href="grampanchayt.html#members">👥 सदस्य</a></li>
+                            <li><a href="grampanchayt.html#contact">📞 संपर्क</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="seva.html" class="active"><span>सेवा</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="seva.html#birth">👶 जन्म नोंदणी</a></li>
+                            <li><a href="seva.html#death">📋 मृत्यू नोंदणी</a></li>
+                            <li><a href="seva.html#marriage">💍 विवाह नोंदणी</a></li>
+                            <li><a href="seva.html#downloads">📄 अर्ज डाउनलोड</a></li>
+                            <li><a href="seva.html#tax">💰 कर भरणा</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="development.html">विकासकामे</a></li>
+
+                    <li class="dropdown"><a href="yojana.html"><span>योजना</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="yojana.html#individual">🏠 वैयक्तिक योजना</a></li>
+                            <li><a href="yojana.html#community">🌳 सामुदायिक योजना</a></li>
+                            <li><a href="yojana.html#mgnrega">⛏️ मनरेगा</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="notice.html">नोटीस बोर्ड</a></li>
+
+                    <li class="dropdown"><a href="village.html"><span>माझे गाव</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="village.html#temples">🛕 मंदिरे</a></li>
+                            <li><a href="village.html#historical">🏛️ ऐतिहासिक ठिकाणे</a></li>
+                            <li><a href="village.html#nature">🌿 निसर्ग</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact1.html">संपर्क</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Services Section -->
+        <section id="gp-services-horizontal" class="gp-services-page section">
+            <div class="container text-center mb-4">
+                <h2 class="gp-section-title">सेवा</h2>
+                <p class="gp-section-subtitle">ग्रामपंचायत मार्फत पुरविण्यात येणाऱ्या सेवा</p>
+            </div>
+
+            <div class="container">
+                <!-- ================= जन्म नोंदणी ================= -->
+                <div class="gp-service-row">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h4 class="service-title">जन्म नोंदणी व प्रमाणपत्र</h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>गावाच्या हद्दीत जन्म झाला असल्यास २१ दिवसांच्या आत जन्म नोंदणी केली जाते व जन्म
+                                प्रमाणपत्र दिले जाते.</p>
+                            <strong>आवश्यक कागदपत्रे:</strong>
+                            <ul>
+                                <li>अर्ज</li>
+                                <li>आई-वडील यांचे आधारकार्ड</li>
+                                <li>आशा / अंगणवाडी कार्यकर्ती यांचा अहवाल</li>
+                                <li>आवश्यकतेनुसार रुग्णालय कागदपत्रे</li>
+                            </ul>
+                            <strong>प्रक्रिया:</strong>
+                            <p>जन्म गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते. प्राथमिक आरोग्य
+                                केंद्र येथे झालेल्या जन्माची नोंदणी त्याच ठिकाणी केली जाते.</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p><strong>शुल्क:</strong><br>पहिले प्रमाणपत्र मोफत<br>त्यानंतर 20 रुपये</p>
+                            <p><strong>वेळ:</strong><br>7 दिवस</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= मृत्यू नोंदणी ================= -->
+                <div class="gp-service-row">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h4 class="service-title">मृत्यू नोंदणी व प्रमाणपत्र</h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>गावाच्या हद्दीत मृत्यू झाला असल्यास २१ दिवसांच्या आत मृत्यू नोंदणी केली जाते व मृत्यू
+                                प्रमाणपत्र दिले जाते.</p>
+                            <strong>आवश्यक कागदपत्रे:</strong>
+                            <ul>
+                                <li>अर्ज</li>
+                                <li>मयत व्यक्तीचे आधारकार्ड</li>
+                                <li>आवश्यकतेनुसार रुग्णालय / पोलीस स्टेशन कागदपत्रे</li>
+                            </ul>
+                            <strong>प्रक्रिया:</strong>
+                            <p>मृत्यू गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते.</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p><strong>शुल्क:</strong><br>पहिले प्रमाणपत्र मोफत<br>त्यानंतर 20 रुपये</p>
+                            <p><strong>वेळ:</strong><br>7 दिवस</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= विवाह नोंदणी ================= -->
+                <div class="gp-service-row">
+                    <div class="row gy-3">
+                        <div class="col-lg-3">
+                            <h4 class="service-title">विवाह नोंदणी व प्रमाणपत्र</h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>विवाह नोंदणी अधिनियम 1998 नुसार विवाह नोंदणी केली जाते.</p>
+                            <strong>आवश्यक कागदपत्रे:</strong>
+                            <ul>
+                                <li>विवाहाचे ज्ञापन</li>
+                                <li>वर-वधूचे जन्म प्रमाणपत्र</li>
+                                <li>आधार / मतदार कार्ड / ड्रायविंग लायसन्स</li>
+                                <li>लग्नाचे फोटोग्राफ्स</li>
+                            </ul>
+                            <strong>प्रक्रिया:</strong>
+                            <p>प्राप्त अर्ज व कागदपत्रांची छाननी करून विवाह नोंदणी केली जाते.</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p><strong>शुल्क:</strong><br>50 ते 200 रुपये<br>प्रमाणपत्र 20 रुपये</p>
+                            <p><strong>वेळ:</strong><br>—</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Downloads Section -->
+        <section id="form-downloads" class="gp-form-downloads section">
+            <div class="container text-center mb-4">
+                <h2 class="gp-section-title">अर्ज नमुना डाउनलोड करा</h2>
+                <p class="gp-section-subtitle">ग्रामपंचायत संबंधित अर्ज नमुने</p>
+            </div>
+
+            <div class="container">
+                <div class="gp-info-box">
+                    <ul class="gp-download-list">
+                        <li>
+                            <i class="bi bi-file-earmark-pdf-fill"></i>
+                            <span>जन्म / मृत्यू अनुपलब्धता अर्ज</span>
+                            <a href="Docs/1.pdf" target="_blank" class="download-btn">डाउनलोड</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-file-earmark-pdf-fill"></i>
+                            <span>लोकसेवा अर्ज</span>
+                            <a href="Docs/2.pdf" target="_blank" class="download-btn">डाउनलोड</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-file-earmark-pdf-fill"></i>
+                            <span>विवाह नोंदणी अर्ज</span>
+                            <a href="Docs/3.pdf" target="_blank" class="download-btn">डाउनलोड</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tax Payment Section -->
+        <section id="tax" class="gp-tax-payment section">
+            <div class="container text-center mb-4">
+                <h2 class="gp-section-title">कर भरणा (Tax Payment)</h2>
+                <p class="gp-section-subtitle">ग्रामपंचायत करांविषयी माहिती</p>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="gp-info-box text-center">
+                            <h4 class="fw-bold text-success mb-3">💰 कर भरणा कसा करावा?</h4>
+                            <p>ग्रामपंचायत शिरोली पुलाची अंतर्गत गृहकर (मालमत्ता कर), पाणीपट्टी आणि इतर कर भरण्यासाठी
+                                नागरिक खालील पद्धतींचा वापर करू शकतात:</p>
+                            <ul class="text-start d-inline-block">
+                                <li>🏢 <strong>ग्रामपंचायत कार्यालय:</strong> थेट ग्रामपंचायत कार्यालयात जाऊन रोख किंवा
+                                    चेकद्वारे कर भरू शकता.</li>
+                                <li>🌐 <strong>ऑनलाइन पेमेंट:</strong> महा-ई-ग्रामस्वराज पोर्टलद्वारे ऑनलाइन कर भरण्याची
+                                    सुविधा उपलब्ध आहे.</li>
+                            </ul>
+                            <div class="alert alert-warning mt-3"
+                                style="background: #fff3cd; border-left: 5px solid #ffecb5; color: #856404; padding: 15px; border-radius: 8px;">
+                                <strong>सूचना:</strong> आपला कर वेळेवर भरून गावाच्या विकासात सहकार्य करा.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/images/logo.png" id="imgFooterLogo"
+                            style="max-height: 60px; background: white; border-radius: 10px;">
+                    </a>
+                    <div class="social-links d-flex mt-4"></div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>महत्वाची संकेतस्थळे</h4>
+                    <ul class="gp-links">
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://maharashtra.gov.in/">महाराष्ट्र शासन</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://majhigrampanchayat.com/">माझी ग्रामपंचायत</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://rdd.maharashtra.gov.in/">ग्रामविकास विभाग</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://egramswaraj.gov.in/">ई-ग्रामस्वराज</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://gr.maharashtra.gov.in/">शासन निर्णय</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a target="_blank"
+                                href="https://nrega.dord.gov.in/">MGNREGA</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>लिंक्स</h4>
+                    <ul>
+                        <li><i class="bi bi-link-45deg"></i><a href="index.html">मुखपृष्ठ</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="grampanchayt.html">ग्रामपंचायतीबद्दल</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="development.html">विकासकामे</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="yojana.html">योजना</a></li>
+                        <li><a href="notice.html">नोटीस बोर्ड</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="village.html">माझे गाव</a></li>
+                        <li><i class="bi bi-link-45deg"></i><a href="contact1.html">संपर्क</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>संपर्क</h4>
+                    <div class="footer-contact">
+                        <p>ग्रामपंचायत कार्यालय,</p>
+                        <p>शिरोली पुलाची, ता. हातकणंगले, जि. कोल्हापूर 416122</p>
+                        <p class="mt-3">
+                            <strong>संपर्क क्र.:</strong>
+                            <span><a href="tel:8605906007">8605906007</a></span>
+                        </p>
+                        <p>
+                            <strong>ई-मेल:</strong>
+                            <span><a href="mailto:shirolipulachi@gmail.com">shirolipulachi@gmail.com</a></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">ग्रामपंचायत शिरोली पुलाची |</strong> <span>All
+                    Rights Reserved</span></p>
+            <div class="credits">
+                Designed by <a style="text-decoration: underline" href="https://www.revolutionit.in">Revolution IT
+                    Solutions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/noframework.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
