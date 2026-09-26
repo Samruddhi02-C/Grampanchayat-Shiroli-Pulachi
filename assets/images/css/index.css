@@ -1,0 +1,421 @@
+
+/* Carousel container */
+.gp-carousel {
+    border-bottom: 4px solid green;
+}
+
+/* Image height */
+.gp-carousel .carousel-item img {
+    /* height: 500px;
+                object-fit: cover;*/
+    width: 100%;
+}
+
+/* RESET Bootstrap indicator styles */
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+
+    /* Remove Bootstrap 5.3 pseudo dots / lines */
+    .carousel-indicators button::before,
+    .carousel-indicators button::after {
+        display: none !important;
+        content: none !important;
+    }
+
+    /* Force dot shape */
+    .carousel-indicators [data-bs-target] {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50% !important;
+        background-color: #000 !important;
+        opacity: 0.4 !important;
+        margin: 0 5px;
+        border: none !important;
+    }
+
+    /* Active dot */
+    .carousel-indicators .active {
+        background-color: #0d6efd !important;
+        opacity: 1 !important;
+    }
+
+    /* HARD FIX: hide duplicated indicators if Bootstrap injected */
+    .carousel-indicators button:nth-child(n+4) {
+        display: none !important;
+    }
+/* Notification Bar */
+.gp-notification-bar {
+    background-color: #d5dee7;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+/* Content layout */
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 35px
+}
+
+    /* Label */
+    .notification-content .label {
+        font-weight: 600;
+        color: #0d6efd;
+        white-space: nowrap;
+    }
+
+    /* Marquee text */
+    .notification-content marquee {
+        color: #212529;
+        font-weight: 500;
+    }
+
+
+/* Welcome Section */
+.gp-welcome-section {
+    background-color: #f2f4f6;
+    padding: 50px 0;
+}
+
+/* Title */
+.gp-welcome-section .section-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 5px;
+}
+
+.gp-welcome-section .section-title p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Content */
+.gp-content {
+    font-size: 15px;
+    color: #212529;
+    line-height: 1.8;
+}
+
+/* Intro text */
+.intro-text {
+    font-weight: 500;
+}
+
+/* Points list */
+.gp-points {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+    .gp-points li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: start;
+        gap: 8px;
+    }
+
+    .gp-points i {
+        color: #198754;
+        margin-top: 4px;
+    }
+
+/* Read more */
+.gp-read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+    .gp-read-more:hover {
+        text-decoration: underline;
+    }
+
+h2 {
+    font-family: "Yatra One", system-ui;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Section title */
+.gp-section-title {
+    color: #a94832;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.gp-section-subtitle {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Service item */
+.services .service-item {
+    background: #ffffff;
+    border: none;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,168,204,0.15);
+}
+
+    /* Icon */
+    .services .service-item .icon {
+        font-size: 36px;
+        color: #0d6efd;
+        margin-right: 15px;
+    }
+
+    /* Title */
+    .services .service-item .title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    /* Description */
+    .services .service-item .description {
+        font-size: 15px;
+        color: #333;
+        line-height: 1.6;
+    }
+/* Officials Section */
+.gp-officials-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Card */
+/* Card */
+.gp-card {
+    background: #ffffff;
+    border: none;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,168,204,0.15);
+}
+
+    /* Scrollable content area */
+    .gp-card .gp-contact {
+        max-height: 80px; /* Adjust if needed */
+        overflow-y: auto;
+        padding-right: 5px;
+    }
+
+/* Photo */
+.gp-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* Name */
+.gp-name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-family: "Poppins", sans-serif;
+    word-break: break-word;
+}
+
+/* Designation */
+.gp-designation {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0d6efd;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+
+/* Contact */
+.gp-contact {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    word-break: break-word; /* Break long email */
+    overflow-wrap: anywhere; /* Extra safety */
+}
+
+    /* Icons */
+    .gp-contact i {
+        color: #198754;
+        margin-right: 5px;
+    }
+
+    .gp-contact::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .gp-contact::-webkit-scrollbar-thumb {
+        background: #0d6efd;
+        border-radius: 10px;
+    }
+/* Development Section */
+.gp-development-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+/* Work Card */
+.gp-work-card {
+    border: none;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.gp-work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,168,204,0.15);
+}
+
+/* Work Image */
+.gp-work-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Work Details */
+.gp-work-details {
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #212529;
+}
+
+/* Emergency Box */
+.gp-emergency-box {
+    border: none;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(220,53,69,0.15);
+}
+
+/* Emergency Title */
+.emergency-title {
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Emergency List */
+.emergency-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .emergency-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 15px;
+    }
+
+        .emergency-list li:last-child {
+            border-bottom: none;
+        }
+
+    .emergency-list .icon {
+        font-size: 20px;
+    }
+
+    .emergency-list .text {
+        flex: 1;
+        margin-left: 8px;
+    }
+
+    .emergency-list .number {
+        font-weight: 700;
+        color: #dc3545;
+    }
+
+        .emergency-list .number a {
+            color: #dc3545;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+            .emergency-list .number a:hover {
+                text-decoration: underline;
+            }
+/* Village Info Section */
+.gp-village-info {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Info Card */
+.gp-info-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gp-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,168,204,0.15);
+}
+
+/* Icon */
+.info-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.gp-info-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Value */
+.gp-info-card p {
+    font-size: 20px;
+    color: #212529;
+    margin: 0;
+    text-align: center;
+}
+
+
+
